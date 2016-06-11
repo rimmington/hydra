@@ -658,7 +658,6 @@ void State::dumpStatus(Connection & conn, bool log)
             auto & stats = store->getStats();
             nested.attr("narInfoRead", stats.narInfoRead);
             nested.attr("narInfoReadAverted", stats.narInfoReadAverted);
-            nested.attr("narInfoMissing", stats.narInfoMissing);
             nested.attr("narInfoWrite", stats.narInfoWrite);
             nested.attr("narInfoCacheSize", stats.narInfoCacheSize);
             nested.attr("narRead", stats.narRead);
